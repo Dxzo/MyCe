@@ -560,12 +560,15 @@ public final class Main extends JavaPlugin {
         }
         // --------------------------------------------------------------------------------
 
-        if (finalize)
-            for (CEnchantment ce : new HashSet<CEnchantment>(EnchantManager.getEnchantments()))
+        if (finalize) {
+            for (CEnchantment ce : new HashSet<CEnchantment>(EnchantManager.getEnchantments())) {
                 ce.finalizeEnchantment();
+            }
+        }
 
-        if (printSuccess)
+        if (printSuccess) {
             Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "[CE] All Enchantments have been loaded.");
+        }
 
         // ITEMS
 
@@ -593,7 +596,7 @@ public final class Main extends JavaPlugin {
 
         // Axe
         items.add(new ThorsAxe("Thor's Axe", ChatColor.GOLD, "Smite your enemies down with mighty thunder!;Note: Batteries not included.", 0, Material.DIAMOND_AXE));
-        items.add(new Pyroaxe("Pyroaxe", ChatColor.DARK_RED, "Are your enemies burning?;Do you want to make their situation worse?;Then this is just perfect for you!", 0, Material.DIAMOND_AXE));
+        items.add(new Pyroaxe("Pyro Axe", ChatColor.DARK_RED, ChatColor.DARK_RED + "I come from the Iron Hills", 0, Material.DIAMOND_AXE));
 
         // Sword
         items.add(new AssassinsBlade("Assassin's Blade", ChatColor.AQUA, "Sneak up on your enemies and hit them hard!; ;(High chance of failure against Hacked Clients)", 200, Material.GOLD_SWORD));
