@@ -1,0 +1,11 @@
+name: CustomEnchantments
+author: Dxzo
+version: 3.0
+main: com.dxzo.bukkit.CustomEnchantments.Main
+
+softdepend: [WorldGuard, WorldEdit, Vault]
+
+commands:
+  customenchantments:
+   description: The main command for Custom Enchantments
+   aliases: [ce]
