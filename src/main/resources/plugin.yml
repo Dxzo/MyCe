@@ -1,11 +1,82 @@
 name: CustomEnchantments
 author: Dxzo
-version: 3.0
 main: com.dxzo.bukkit.CustomEnchantments.Main
+version: 1.0
 
-softdepend: [WorldGuard, WorldEdit, Vault]
-
+softdepend: [WorldGuard, Vault]
+permissions:
+  customenchantment.*:
+    default: op
+    children:
+      customenchantment.canEnchant: true
+      customenchantment.canMortar: true
+      customenchantment.canChangeItem: true
+      customenchantment.canMakeShop: true
+      customenchantment.Lifesteal: true
+      customenchantment.Gooey: true
+      customenchantment.Deathbringer: true
+      customenchantment.Bombardment: true
+      customenchantment.Firework: true
+      customenchantment.Fireworks: true
+      customenchantment.Poison: true
+      customenchantment.Blind: true
+      customenchantment.Block: true
+      customenchantment.Minigun: true
+      customenchantment.Hookshot: true
+      customenchantment.Rocketboots: true
+      customenchantment.Necromancer: true
+      customenchantment.Beastmaster: true
+      customenchantment.Assassin: true
+      customenchantment.Powergloves: true
+      customenchantment.Ice: true
+      customenchantment.Shockwave: true
+      customenchantment.Flamethrower: true
+      customenchantment.Landmine: true
+      customenchantment.Hermesboots: true
+      customenchantment.Livefire: true
+      customenchantment.Deathscythe: true
+      customenchantment.Medikit: true
+      customenchantment.Thoraxe: true
+      customenchantment.Pyroaxe: true
+      customenchantment.Molten: true
+      customenchantment.Frozen: true
+      customenchantment.Poisoned: true
+      customenchantment.Enlighted: true
+      customenchantment.Hardened: true
+      customenchantment.Swimsuit: true
+      customenchantment.Glowing: true
+      customenchantment.Springs: true
+      customenchantment.Potionlauncher: true
+      customenchantment.Gears: true
+      customenchantment.Hooks: true
+      customenchantment.Enderbound: true
+      customenchantment.Obsidianshield: true
+      customenchantment.Implants: true
+      customenchantment.Autorepair: true
+      customenchantment.Stomp: true
+      customenchantment.Prickly: true
+      customenchantment.Beartrap: true
+      customenchantment.Poisonivy: true
+      customenchantment.Piranhatrap: true
+      customenchantment.Druidboots: true
+      customenchantment.Healingshovel: true
+      customenchantment.Thunderingblow: true
+      customenchantment.Cripple: true
+      customenchantment.Deepwounds: true
+      customenchantment.Vampire: true
+      customenchantment.Suicidelever: true
 commands:
-  customenchantments:
-   description: The main command for Custom Enchantments
-   aliases: [ce]
+  cereload:
+     description: Reloads the Custom Enchantments config.
+  setname:
+     description: Sets the Display Name of an Item.
+  setlore:
+     description: Sets the Lore of an Item.
+  addlore:
+     description: Adds new Lore to the Item.
+  removelore:
+     description: Removes Lore from the Item.
+  ench:
+     description: Enchants your item.
+  enchgive:
+     description: Gives the specified Player an item with the specified Enchantment.
