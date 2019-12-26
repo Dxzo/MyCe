@@ -1,12 +1,13 @@
-# Custom Enchantments
+# My Custom Enchantments
 
 ## Information
 
-The plugin's main page: http://dev.bukkit.org/bukkit-plugins/custom-enchantments/
+This plugin is a fork of http://dev.bukkit.org/bukkit-plugins/custom-enchantments/
+and continued from the version 1.1e
 
-This project was not originally intended to be public, 
-if you still want to take a look into the code and or contribute to the project, 
-feel free to do so.
+## Support versions
+
+It is intended to be supported from version 1.8 onwards
 
 ## Dependencies
 
