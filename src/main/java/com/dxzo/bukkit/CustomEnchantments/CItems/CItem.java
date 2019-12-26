@@ -173,8 +173,8 @@ public abstract class CItem extends CBasic {
 
         // Add an empty line to the end if the last line is not already one
         // This is just for stylistic purposes
-        if (this.description.get(description.size() - 1).length() > 0)
-            this.description.add("");
+        // if (this.description.get(description.size() - 1).length() > 0)
+        //     this.description.add("");
     }
 
 }

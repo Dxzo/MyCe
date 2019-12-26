@@ -310,7 +310,7 @@ public class CEventHandler {
                                                         if (!(ex instanceof ClassCastException))
                                                             for (StackTraceElement element : ex.getStackTrace()) {
                                                                 String className = element.getClassName();
-                                                                if (className.contains("com.taiter.ce")) {
+                                                                if (className.contains("com.dxzo.bukkit.customenchantments")) {
                                                                     Bukkit.getConsoleSender().sendMessage(ChatColor.RED + "[CE] An error occurred in " + element.getFileName() + " on line "
                                                                             + element.getLineNumber() + ": " + ex.getCause());
                                                                     break;
@@ -364,7 +364,7 @@ public class CEventHandler {
                                                 if (!(ex instanceof ClassCastException))
                                                     for (StackTraceElement element : ex.getStackTrace()) {
                                                         String className = element.getClassName();
-                                                        if (className.contains("com.taiter.ce")) {
+                                                        if (className.contains("com.dxzo.bukkit.customenchantments")) {
                                                             Bukkit.getConsoleSender().sendMessage(ChatColor.RED + "[CE] An error occurred in " + element.getFileName() + " on line "
                                                                     + element.getLineNumber() + ": " + ex.getCause());
                                                             break;

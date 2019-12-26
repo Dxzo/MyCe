@@ -552,7 +552,7 @@ public final class Main extends JavaPlugin {
             } else {
                 Bukkit.getConsoleSender().sendMessage(ChatColor.RED + "[CE] Custom Enchantments could not be loaded,");
                 Bukkit.getConsoleSender().sendMessage(ChatColor.RED + "[CE] please report this error on the Bukkit page of the plugin");
-                Bukkit.getConsoleSender().sendMessage(ChatColor.RED + "[CE] by sending the following to Taiterio via PM:");
+                Bukkit.getConsoleSender().sendMessage(ChatColor.RED + "[CE] by sending the following to Dxzo via PM:");
                 e.printStackTrace();
             }
             plugin.getServer().getPluginManager().disablePlugin(plugin);
@@ -578,7 +578,7 @@ public final class Main extends JavaPlugin {
         items.add(new HookshotBow("Hookshot Bow", ChatColor.AQUA, "Everyone is just one hook away", 0, Material.BOW));
 
         // Boots
-        items.add(new HermesBoots("Hermes Boots", ChatColor.GOLD, "These boots are made for walkin'", 100, Material.DIAMOND_BOOTS));
+        items.add(new HermesBoots("Hermes Boots", ChatColor.GOLD, "These boots are made for walkin'", 0, Material.DIAMOND_BOOTS));
         items.add(new LivefireBoots("Livefire Boots", ChatColor.DARK_RED, "Leave a burning trail...;Because it's fun!", 0, Material.DIAMOND_BOOTS));
         items.add(new RocketBoots("Rocket Boots", ChatColor.AQUA, "Up we go!; ;WARNING: May cause dismemberment,;            death;            and explosions", 0, Material.DIAMOND_BOOTS));
         items.add(new DruidBoots("Druid Boots", ChatColor.DARK_GREEN, "Let the nature rejuvenate you!", 0, Material.DIAMOND_BOOTS));
@@ -623,7 +623,7 @@ public final class Main extends JavaPlugin {
         items.add(new Bandage("Bandage", ChatColor.GREEN, "It has little hearts on it,;so you know it's good", 1000, Material.PAPER));
         items.add(new Deathscythe("Deathscythe", ChatColor.DARK_GRAY, "An ancient evil lies within...", 400, Material.GOLD_HOE));
         items.add(new PotionLauncher("Potion Launcher", ChatColor.DARK_GRAY,
-                "Instructions: Put potion into the righthand slot;                of the potion launcher,;                aim and fire!; ;Manufactured by " + ChatColor.MAGIC + "Taiterio", 20,
+                "Instructions: Put potion into the righthand slot;                of the potion launcher,;                aim and fire!; ;Manufactured by " + ChatColor.MAGIC + "Dxzo", 20,
                 Material.HOPPER));
         //
 

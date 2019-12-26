@@ -18,7 +18,6 @@ package com.dxzo.bukkit.CustomEnchantments.CItems;
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 */
 
-
 import org.bukkit.ChatColor;
 import org.bukkit.Effect;
 import org.bukkit.Material;
@@ -50,7 +49,7 @@ public class Pyroaxe extends CItem {
 		if(e.getDamager() == player && entity.getFireTicks() > 0) {
 			e.setDamage(damageMultiplier * e.getDamage());
 			entity.getWorld().playEffect(entity.getLocation(), Effect.ZOMBIE_DESTROY_DOOR, 10);
-			EffectManager.playSound(entity.getLocation(), "BLOCK_ANVIL_LAND", 1f, 0.001f);
+            EffectManager.playSound(entity.getLocation(), "BLOCK_ANVIL_LAND", 1f, 0.001f);
 			return true;
 		}
 		return false;
